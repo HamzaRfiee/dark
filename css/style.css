@@ -1,0 +1,97 @@
+/* italic */
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+/* font-family: 'Marck Script', cursive; */
+
+/* normal */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300;400;500;600;700;800;900&display=swap");
+/* font-family: 'Montserrat Alternates', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* dark #25232D */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: 0.7s;
+  background: white;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+  width: 300px;
+  border-radius: 30px;
+  padding: 20px;
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 4px 10px -7px #000000c9;
+}
+
+.container .moon {
+  background: linear-gradient(30deg, #ff8c00, #ff6523, #ff2b58);
+  height: 150px;
+  width: 150px;
+  margin: 60px 0 40px 0;
+  border-radius: 50%;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* background: linear-gradient(30deg, #8f97f8, #a3dafb 60%); */
+.container .moon .anima {
+  background-color: #25232d;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  transition: 0.7s;
+  position: absolute;
+  top: -100px;
+  transform: scale(0);
+  right: -55px;
+}
+
+/* .motion {
+  top: -6px;
+  right: -8px;
+} */
+
+.container .moon:hover .container {
+  background-color: #25232d;
+}
+
+.container .btns {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.container #light {
+  border-radius: 20px;
+  padding: 10px 30px;
+  color: black;
+  background-color: white;
+  border: 1px solid #25232d;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container #dark {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #25232d;
+  border: 1px solid white;
+}
